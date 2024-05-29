@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <title>Document</title>
+    <style>
+         header {
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+        }
+    #hd{
+        display: flex;
+        transform: translate(47%);
+        margin-left: 0px;
+    }
+    #hdtxt{
+        font-family: 'Tangerine', serif;
+        font-weight: bolder;
+        font-size: larger;
+    }
+    #hdtxt:hover{
+    background-color: cornflowerblue;
+    height: 20px;
+   }
+    ul{
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        transform: translate(15%);
+        margin-left: 125px;
+    }
+    li:hover{
+        color: red;
+        text-decoration: underline;
+    }
+    li{
+        margin-left: 70px;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: large;
+    }
+    select{
+        font-family: cursive;
+        border-color: transparent;
+        font-size: large;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: transparent;
+    }
+    select:hover{
+        color: red;
+        text-decoration: underline;
+    }
+    option{
+        font-family: cursive;
+        cursor: pointer;
+        color: black;
+    }
+    footer {
+            background-color: rgb(175, 204, 236);
+            width: 100%;
+            bottom: 0px;
+            height: 100%;
+            margin-top: 800px;
+    }
+    i{
+        margin-left: 30px;
+        margin-top: 18px;
+        font-size: 25px;
+    }
+    p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+    #globe {
+            margin-left: 68%;
+        }
+        i.test:hover{
+            background-image: linear-gradient(20deg,red,blue,orange,white,purple);
+            background-clip: icon;
+            -webkit-background-clip: icon;
+            border-radius: 8px;
+        }
+        .bgimg{
+            height: 800px;
+            padding-top: 10px;
+            width: 100%;
+        }
+        #box1{
+       width: 1150px;
+       height: 800px;
+       background-image: url("https://images.pexels.com/photos/6347556/pexels-photo-6347556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+       background-size: cover;
+       border-radius: 8px;
+       margin-left: 195px;
+       margin-top: 100px;
+    } 
+    #textbg{
+        color: rgb(0, 0, 0);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 680px;
+        margin-top: 210px;
+        font-size: 40px;
+    }   
+    .imgbtn{
+        background-color: black;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 8px;
+        width: 200px;
+        height: 40px;
+        font-weight: bold;
+        font-size: large;
+    }
+    .fotopt{
+        display: flex;
+        flex-direction: column;   
+    }
+    #boximg{
+        width: 400px;
+        height: 400px;
+        border: 1px solid rgb(221, 221, 221);
+        border-radius: 8px;
+    }
+    span{
+        color: rgb(255, 255, 255);
+        background-color: blue;
+        border-radius: 10px;
+        font-family: cursive;
+    }
+    #subtxt{
+        font-family: cursive;
+        text-align: center;
+    }
+    #btnimg{
+        background-color: transparent;
+        color: blue;
+        border: transparent;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+    }
+    #boximg:hover{
+        cursor: pointer;
+        border: 2px solid blue;
+        width: 402px;
+        border-radius: 8px;
+    }
+    #maindiv{
+        margin-left: 45px;
+        display: flex;
+        justify-content: space-around;
+    }
+    #box2{
+        width: 100px;
+        height: 200px;
+        border: 2px solid rgb(255, 255, 255);
+        background-image: url("https://images.pexels.com/photos/38544/imac-apple-mockup-app-38544.jpeg?auto=compress&cs=tinysrgb&w=600");
+        background-size: cover;
+    }
+    #box2:hover{
+        animation: boxanim 1s forwards;
+        cursor: pointer;
+    }
+    @keyframes boxanim{
+            from{width: 100px;height: 200px}
+            to{width: 280px;height: 200px}
+        }
+        #box3{
+        width: 100px;
+        height: 200px;
+        border: 2px solid rgb(255, 255, 255);
+        background-image: url("https://images.pexels.com/photos/248533/pexels-photo-248533.jpeg?auto=compress&cs=tinysrgb&w=600");
+        background-size: cover;
+    }
+    #box3:hover{
+        animation: boxanim 1s forwards;
+        cursor: pointer;
+    }
+    @keyframes boxanim{
+            from{width: 100px;height: 200px}
+            to{width: 280px;height: 200px}
+        }
+        #box4{
+        width: 100px;
+        height: 200px;
+        border: 2px solid rgb(255, 255, 255);
+        background-image: url("https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=600");
+        background-size: cover;
+    }
+    #box4:hover{
+        animation: boxanim 1s forwards;
+        cursor: pointer;
+    }
+    @keyframes boxanim{
+            from{width: 100px;height: 200px}
+            to{width: 280px;height: 200px}
+        }
+        #box5{
+        width: 100px;
+        height: 200px;
+        border: 2px solid rgb(255, 255, 255);
+        background-image: url("https://images.pexels.com/photos/7534804/pexels-photo-7534804.jpeg?auto=compress&cs=tinysrgb&w=600");
+        background-size: cover;
+    }
+    #box5:hover{
+        animation: boxanim 1s forwards;
+        cursor: pointer;
+    }
+    @keyframes boxanim{
+            from{width: 100px;height: 200px}
+            to{width: 280px;height: 200px}
+        }
+        #maindiv2{
+            display: flex;
+            transform: translate(19%);
+        }
+        #btn2{
+            border: transparent;
+            background-color: black;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: large;
+            width:180px ;
+            height: 40px;
+            border-radius: 10px;
+        }
+        #imgbtn2{
+            color: white;
+            font-size: 40px;
+            margin-left: 270px;
+        }
+        #imgbtnbox{
+            width: 1000px;
+            height: 700px;
+            background-image: url("https://images.pexels.com/photos/5699834/pexels-photo-5699834.jpeg?auto=compress&cs=tinysrgb&w=600");
+            background-size: cover;
+            border-radius: 10px;
+        }
+        .btnimgpic{
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            width: 190px;
+            height: 50px;
+            margin-left: 90px;
+            cursor: pointer;
+        }
+        #logintxt{
+            text-align: center;
+            font-size: 40px;
+        }
+        #loginbtn{
+            background-color: rgb(83, 83, 243);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            width: 100px;
+            height: 40px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .logbox{
+            width: 500px;
+            height: 250px;
+            border: 3px solid rgb(158, 138, 138);
+            border-radius: 10px;
+            transform: translate(103%);
+            cursor: pointer;
+        }
+        @keyframes loganim{
+            50%{border-color: rgb(126, 126, 241);}
+            30%{border-color: rgb(248, 99, 99);}
+            50%{border-color: rgb(173, 249, 58);}
+        }
+        .logbox:hover{
+            animation: loganim 3s infinite;
+        }
+        #phbox1{
+            width: 20px;
+            height: 20px;
+            border: 5px solid white;
+            background-color: red;
+            margin-top: 50px;
+            border-radius: 18px;
+        }
+        #phbox1:hover{
+            cursor: pointer;
+            animation: phboxanim1 3s forwards;
+        }
+        @keyframes phboxanim1{
+            from{width: 20px;height: 20px;margin-top: 50px;}
+            to{width: 280px;height: 250px;background-color: transparent;margin-top: -65px;}
+            to{background-image: url("https://images.pexels.com/photos/6963585/pexels-photo-6963585.jpeg?auto=compress&cs=tinysrgb&w=600");background-size: cover;}
+        }
+        #phbox2{
+            width: 20px;
+            height: 20px;
+            border: 5px solid rgb(255, 255, 255);
+            background-color: blue;
+            margin-top: 50px;
+            border-radius: 18px;
+        }
+        #phbox2:hover{
+            cursor: pointer;
+            animation: phboxanim2 3s forwards;
+        }
+        @keyframes phboxanim2{
+            from{width: 20px;height: 20px;margin-top: 50px;}
+            to{width: 280px;height: 250px;background-color: transparent;margin-top: -65px;}
+            to{background-image: url("https://images.pexels.com/photos/3296547/pexels-photo-3296547.jpeg?auto=compress&cs=tinysrgb&w=600");background-size: cover;}
+        }
+        #phbox3{
+            width: 20px;
+            height: 20px;
+            border: 5px solid rgb(255, 255, 255);
+            background-color: black;
+            margin-top: 50px;
+            border-radius: 18px;
+        }
+        #phbox3:hover{
+            cursor: pointer;
+            animation: phboxanim3 3s forwards;
+        }
+        @keyframes phboxanim3{
+            from{width: 20px;height: 20px;margin-top: 50px;}
+            to{width: 280px;height: 250px;background-color: transparent;margin-top: -65px;}
+            to{background-image: url("https://images.pexels.com/photos/5052877/pexels-photo-5052877.jpeg?auto=compress&cs=tinysrgb&w=600");background-size: cover;}
+        }
+        #phbox4{
+            width: 20px;
+            height: 20px;
+            border: 5px solid rgb(255, 255, 255);
+            background-color: greenyellow;
+            margin-top: 50px;
+            border-radius: 18px;
+        }
+        #phbox4:hover{
+            cursor: pointer;
+            animation: phboxanim4 3s forwards;
+        }
+        @keyframes phboxanim4{
+            from{width: 20px;height: 20px;margin-top: 50px;}
+            to{width: 280px;height: 250px;background-color: transparent;margin-top: -65px;}
+            to{background-image: url("https://images.pexels.com/photos/3314294/pexels-photo-3314294.jpeg?auto=compress&cs=tinysrgb&w=600");background-size: cover;}
+        }
+        #maindiv3{
+            margin-left: 450px;
+            display: flex;
+        }
+        #animateimg{
+            width: 90%;
+            height: 800px;
+            border: 2px solid;
+            background-size: cover;
+            animation: imganimate 18s infinite;
+            margin-left: 80px;
+            border-radius: 10px;
+            background-image: url("https://images.pexels.com/photos/2694434/pexels-photo-2694434.jpeg?auto=compress&cs=tinysrgb&w=600");
+        
+        }
+        @keyframes imganimate{
+            0%{background-image: url("https://images.pexels.com/photos/2694434/pexels-photo-2694434.jpeg?auto=compress&cs=tinysrgb&w=600");}
+            25%{background-image: url("https://images.pexels.com/photos/5053835/pexels-photo-5053835.jpeg?auto=compress&cs=tinysrgb&w=400");}
+            50%{background-image: url("https://images.pexels.com/photos/122383/pexels-photo-122383.jpeg?auto=compress&cs=tinysrgb&w=600");}
+            75%{background-image: url("https://images.pexels.com/photos/5053835/pexels-photo-5053835.jpeg?auto=compress&cs=tinysrgb&w=400");}
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div id="hd">
+    <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR38Pw-FmZhRKLnkmF1jiVGwewHYa45eGIZwg&s" width="50" height="50">
+    <p id="hdtxt">Instagram</p>
+    </div>
+    <div>
+    <ul id="headopt" type="none">
+        <li>Home</li>
+        <li>About</li>
+        <li>Visit us</li>
+        <li>Our Products</li>
+        <li>
+            <select>
+                <option selected>My Profile</option>
+                <option>Password</option>
+                <option>Get Verifyed</option>
+                <option>Page Followers</option>
+                <option>Saved Posts</option>
+            </select>
+        </li>
+    </ul>
+    </div>
+    </header>
+    <div id="box1" style="display: flex;">
+    <p id="textbg">Make Your content Look more attractive<br>Using Instagram Filters<br><br>
+    <button class="imgbtn">Try Now</button>
+    </p>
+</div><br><br><br><br><br>
+    <div id="maindiv">
+        <div id="boximg">
+        <img style="transform: translate(170%);margin-top: 50px;" src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-circle-512.png" width="90"><br><br><br>
+        <p id="subtxt">Make your account<span> Secure </span> using <br>Instagram New Security Software</p><br><br><br>
+        <button style="margin-left: 155px;" id="btnimg">Learn More</button>
+        </div>
+        <div id="boximg">
+            <img style="transform: translate(170%);margin-top: 50px;" src="data:image/png;base64,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" width="90"><br><br><br>
+            <p id="subtxt">Get your account<span> Verifyed </span> using <br>Instagram New Account Influencer Dashboard</p><br><br><br>
+            <button style="margin-left: 155px;" id="btnimg">Learn More</button>
+            </div>
+            <div id="boximg">
+                <img style="transform: translate(170%);margin-top: 50px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEUmfLX///8AcrDo7vUdebMAc7EaeLMRdrLI2+oOdbL1+fzy9vpjnMYjfbbM3uzp8fcvgbji7PTZ5/GRt9VSkL++1Obc6fJHjb6zzOGjw9zR4e7A1ueryN+gwdtuosl1p8w8iLyIsdJkncZal8Rzo8mWu9eArc8wdthnAAANd0lEQVR4nO2d63qqOhCGAyskRqAgomBtRWuX93+JG88cEshMAtKu/f3bz15FXnKYZDKZIc7g8pNtvjkUQZrtY3JWvM/SoDhs8m3iD//zZMBnR+t8+Z2FricEZ5RS8lT5X4wL4blh+r3M19GAbzEUYZIXaSwEY1UumShjQsTpKU8GepMhCJNNQBjvZatzckaCzRCUtgn9VRG6HAJXweRuWKxsD02rhNFHwARD0d1V/n3wYXVY2iOc50eKbLxmU9Ign1t7L1uEb4UwbL0apODFu6U3s0Lof+5de3hXMXe/sTIkLRCuT6GV3tkU5eHJwuRqTPgecD4A3lWcB8aMhoRvqTtE8z1F3fTthYRvR+vDry3mHo0YDQiTQAzbfndRYdJX0YR+4Q3ffncxr0DPq1jCTzHc/CITF5+jEs72YlS+s8R+NhrhvBhpANZFRYFZyyEIVwMawG5xvhqB0N+5L+I7y92BZxwo4TYebwaVicXbYQkP3itGYFXUOwxIuMheNQKr4tliKMIVyPUynCiFTDgAwuX4NlAlsRyAcB5MB7BEDLRNoy5htH/tHNoU2+u6qzQJ38NpDMGnWKzpyNEj3E5kjqmKMj3LqEX48cpljFruhy3Cz2kClog6OyoNwglZiabEXxuEh+kCEqKxhOslPEy1i17l9tr+PsIJd9GrvL6O2kP4OXXAciz2TDfdhBM1E3X1GI1Owu1PACwRO01/F+H7tJaiarGuBVwHYTS5tahKNO5YhqsJ5xPbTXSJ7dWbKTVhYA+Qea5MFn0+LIATWjSE7LiO/rQVrY/2ENW7fhXhyqIh9FQnR4ln70eEynejIFzYHIPuH8WP/7FpjajCA6cgzGxOoyMRZhDCg1W/6DiEhB/0CbcWxwcZjZB40rWNjNCP7Zr6sQhpLDu2kRHuLJv6sQgJ2+kRrmyvt0cjJK7EZLQJ59ZPX8YjJLy9emsTFj+asOgnnNnf1Y9ISEQruqhFuEfNo5x0zE4YQkpxW5u23W8S4hwzPJ9v1Z0bQcjiBfKspOW2aRD6KMCLG2Gm/OZwwjNguTBHzQi8YRQbhKhp5uYnman+FkxIw+sq+h0Tt8Mak02dELWd4fdYpXdFB4ASsvDulHinCMTGZq1OGCAeyJ/BWIqOCiS8dtEbImK6aez3a4RviFHoVaPNpB2VcpWfKJIFv1cB1f2iS3WLUSNEeBV4PZyu9Y2oEJk64m61F82hdh+DBl+dHlWEb3ADzJoGtvZClIdB3h2mFeVBLQ7+OQYfT4R3VLf6VlXCFPws3o5Pfo5F6mUbnXCCaJM9vG71Lir5aFpiqZwwATdhe4nkPMYicwP9OyHvX9eAcRbKnC0z8AzvVqbTCiF0IqUKZ/pbObQY34FCs5zFjrNyDMrbHLxWppXp9Em4Bhp7SlVt9MZEsAbxnZUE6hiZjiWhXPz5+0/CE/ApQh0/H8Ha766F2jUPPQVjhzahH4IeQbmtm1d6giKGjyn8QfgJa8JwqEutSkTY+/FNixC2L+w8sRtGOciW0X2TEGjt94rXGFBz0AsS994Gd8ICZu0Zbi4x0Rb4hvdN1I1wDrQ4zdXj8FLuPlUS8xphDrWpsuXVoIDwFWVeIzyCH9BeIg+pN7jv4b5NvBJGiJ3vmB0V5eKkUYXwA+OeGa+jgsfgReKjQojxXoyHiAMk9OtJ6CMPm8YZixjfyhXRfxCiwxKgY3HunwW7Y4c/ZrgGL1wIgea+Iv2OGm2XuyxmnuuxONstt7qtDzcTz5crHoSwbUX9KVoddfGZhh57OD8pZV6Yfup8HISZeCq8E8LdFxVpdNTZUUiSLlAujr33XtFj8CJ3fSPcGJ0Y0o6Ysgtfpry0T90OT+NZkdl5O/+4EeJsxUOdq/BF0Bm9Rr2vzr82Cwq5uGvOhAbDkHQGzZXdg/W1AmObjr83/PjkSog7xHqIq51O80CnDbyOe2iJ2Yk0Sy6EuRGhNMLj1sc0j3HZXt1TzSJfzvsLYmINz3KVb5eEug+mRNkP1kZH/ex0IUxN+jpVjsIEcN+NUiWi0Uik6Zkwig0eQTyVS2oBOoWnRNUV3oym09gvCdcmg1kV8giOEldbVaNAULEuCcEOjKq4aqoHR4krjY7ReqRcfBNnaTLRqFalG3jf8hQfC+N/eIgtS8JvA0LVPIMKolatjUzmGvZdEpr0c5Fb6qOXt/mSP8xkGJWTKTFaswn5ETb8SPMiT74Mj0wmitAhvoFJZYqZFNktVBOzyeUd1yf6QULtmy+KOw4z7Edz5Y24FfjbNm5Ctrp9gB2T1q0X+TeHu5dvqoeJVPpp84cT7bgYsSXa49jTPbhe4McN1/X6aPc8kRNtg+rq+o6AZ61Vcd2UZZHuQOAbctDtUsrotKYMVvI07X/8RdrRxWxJCt330SWMTMyProtZm5AWRHvFoEtodOFGYRLxhCwg2n1Kl9Boncs0kwfpt+GRZLo/rku4M9qyqn0iOMKSb6/7T3UJjfZzyv0mmnBPtHf4moRzI5cBifWObfQJAa+jSYg9qbuJ6WUNfCmhmZtasVvBEwJsly6h2U0f1zYh5Lf/b8Mb4eTG4e+fS/e6/3Qce6i59IbYw2mtaTrOeZCE2T+wLv3te4uvf2B/OKk9Phtij//b/TSfE/O16X7FNcDXpu0vpa/zl/qtH9aeH8UW4POmLZ83lydKw/u85aU6EtpKMaXv817/hHMLk1AK1zc8e1LcNbN69uSYLJJChxiFYqjOD79snh9irgLfdTk/nPwZsLbFlj3z+wec4zt7g/e7nONPPRZD25zJdInFGCqeBja81fE0X8bxNEPFRBFQTJQy0thghURuMVGGcW2KCbBcWAFyWnTEtUEv79afe4lrc04DxSautVuRhkpAM9fdLTZx0vGlZp//Fl+amPn/Ou50m8cIR2bxy7cYYcfoIcZx3rQrzttkOUKuFy4sxOqLzmj7L5NY/blZfsNHrL7hfQvavW2dZcq9Tu99C+dkZCsu6xHjOzOy/CZNxiOX3JlhnGuUbtyZfP3HnRmjDVQ/oKO696TlsjBBfNx7MtliMt2SfdHseXct3S1n2jcXv9EdtXJ3DZ8WWZqhRi3M/UN8K3rP+4foE7Fx0n9gESt3SLH2opUlaihEVB+r3gPG3eUeDRDZijcXC/4+vt4s+kLE2n18TOi5GDWBC7yj0lpOBYQrY7wuehXYaDTyYoCTB3Nc6VoDQe/pNXKbQBfxmjXPrAqYBamRn8Z5B65NMZV5DQULEGjlGAJ+Ia5wdg+oBPSC7TxR0C2U4thpQECQ706W6wuYr02a/nxIQGAFRkm+NrDbrqvKEi6ryx/1nyWSDWaXzk62FiHYIaUskj1Ped/eXaKo4EJVfSuBJr6W5k2EL78V157mGSNUZ/9e4zud65l7csQEmjBZnvsS4cyQjkX/WviZuZn+ZJQU7nWMSBGhY1CZvxSRg9ZrI5Zd9PY/qbdf6gxIPz8+MyZLOiocUJWDFpNHuN1Rq6W7KWfpphtyvtqFtYzQrVYEj8GOPMKYXNCNVjyPwZooF7G6el+SilbC6wYivAUbJ9PG+bxrY9GXFV+niniG8ntI80rUOioCsOFbaeRkRzhsKh31OQZrgmadryCCZ1HSiniwkVf/MWfKWpAgKgc8OipiDF7OfdWEyNoI11ZsjcHH/wdXf7gV3oSuZC6qLGdkhAb1LXx5FyWoCh6XjooZg+1ofzs1SsqxOFd0UYKrwiI289kgNUrQdWb2HZsbVCUdRlEezv46M/9AraDfX+/pZ9fsYjo1u35/3bWfXDvvW/Ij/2b9w99fw/IfqEP6D9SSdRY/kBBWD3icms7aN180BK3pbLUuN83epXW5F6bZSSsSf1Ugo9RWb9+2Ad586RWmtjo4UvuV6splrCZ0IsuGfzjRuCPCqoMQVZrvJVJWnuojBJcgepG6TsF6CJ2Pn4Doqj3O/YRIt82oEl1R1P2Ezl+7i3D78pSGUJPQOUy7o7q9KQp6CZ3llFvR68/B0E/o/J3uWFSv1UCEzudUO6rbM8loE07VaPSYCQihs0WdIAwrqhlbp0fovMdTW8HRWDO+VZPQiUyS+Q4gdc1SLKEzD6Y0pYqO+25YQqu7flPpWAkEobPC1HIfQJRCogYhhM5CfQo6ongGCgwEEZarVP1M2gOJegfYKwMJne2LzQaLoaG7UELH371ygeN+62UdNCEsJxz+qtHIGSIwGUHozAvxitFIRYG5IYAhdJy3bHzbKDLcLR0c4Tll2bgzDmO6ic5sETp+4Y3HyLwTeIYxJnScJBhpOFIe6OaKs0tYDsejsrShPTE3MLoHaERYMqYWD5Bkom5qeA3QkPDcVweccxgP1HlFxiJ0nPUpxMSB9ory8GQw/iwSlvPqRl1rFCvm7jfo+bMqK4Sl3gthsbdSLgpb14xtEZZruTygVsxH+ZQgt3eD0x5hqeijhDTMWO7Rr9xqtW+rhKX8VRG6yImHcjcsVlYGX0W2Cc9afwTlPA9yItPy35NgY2HqbGkIwrOS/JTGQrBeTsqYEHF6yo0Nn0JDEZ7lr1fL7zR0XVHOs7TGWv4X40K4bph+L1dr2z2zqiEJb/KTbb5ZFsEx28dxSMI43mfHr2K5ybeDot30H2F6yPre8rxYAAAAAElFTkSuQmCC" width="90"><br><br><br>
+                <p id="subtxt">Make your account<span> Customizable </span> using <br>New Instagram Premium</p><br><br><br>
+                <button style="margin-left: 155px;" id="btnimg">Learn More</button>
+                </div>
+        </div><br><br><br><br><br>
+    <div id="maindiv2">
+        <div id="box2"><p style="color: rgb(255, 255, 255);text-align: center;margin-top: 85px;font-family: cursive;font-size: large;background-color: rgb(27, 26, 26);border-radius: 2PX;margin-right: 90px;">customize</p></div>
+        <div id="box3"><p style="color: rgb(255, 255, 255);text-align: center;margin-top: 85px;font-family: cursive;font-size: large;background-color: rgb(40, 38, 38);border-radius: 2PX;margin-right: 90px;">App Purchases</p></div>
+        <div id="box4"><p style="color: rgb(255, 255, 255);text-align: center;margin-top: 85px;font-family: cursive;font-size: large;background-color: rgb(41, 40, 40);border-radius: 2PX;margin-right: 90px;">Soceial media platform</p></div>
+        <div id="box5"><p style="color: rgb(255, 255, 255);text-align: center;margin-top: 85px;font-family: cursive;font-size: large;background-color: rgb(40, 39, 39);border-radius: 2PX;margin-right: 90px;">Reliable Service</p></div>
+        <p style="margin-left: 100px;margin-top: 15px;font-size: 30px;">Exprore Into The the New World of<br> Socialmedia.<br><br>
+        <button id="btn2">Explore Now</button>
+        </p>
+    </div><br><br><br><br><br><br>
+    <div id="imgbtn2">
+        <div id="imgbtnbox">
+        <p style="margin-left: 600px;padding-top: 150px;">Connect To Each other<br> On a single Social Media Platform<br> By using Instagram.<br><br>
+        <button class="btnimgpic">Experence Now</button>
+        </p>
+        </div>
+    </div><br><br><br><br><br><br><br><br><br>
+    <div class="logbox">
+    <p id="logintxt">login to Instagram<br> To access The features.<br>
+    <a href="http://127.0.0.1:3000/EG.html"><button id="loginbtn">Login</button></a>
+    </p>
+    </div><br><br><br><br><br><br><br><br>
+    <div id="maindiv3">
+        <div id="phbox1"></div><br>
+        <div id="phbox2"></div><br>
+        <div id="phbox3"></div><br>
+        <div id="phbox4"></div>
+        <p style="margin-left: 100px;margin-top: px;font-size: 30px;">Expernce The the New Features of<br> Instagram.<br><br>
+    </div><br><br><br><br><br>
+    <div>
+        <div id="animateimg"></div> 
+    </div>
+    <footer>
+        <div id="Follow" style="display: flex;">
+            <p>Follow us</p>
+            <a href="https://www.instagram.com/" target="_blank" style="color: black;"><i
+                    class="fa-brands fa-instagram test"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" style="color: black;"><i
+                    class="fa-brands fa-youtube test"></i></a>
+            <a href="https://twitter.com/" target="_blank" style="color: black;"><i
+                    class="fa-brands fa-x-twitter test"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" style="color: black;"><i
+                    class="fa-brands fa-square-facebook test"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" style="color: black;"><i
+                    class="fa-brands fa-linkedin test"></i></a>
+            <i class="fa-solid fa-globe" id="globe"></i>
+            <select
+                style="height: 30px; margin-left: 15px; margin-top: 15px;border-radius: 3px;font-family: cursive;cursor: pointer;">
+                <option selected>English</option>
+                <option>Hindi</option>
+            </select>
+            </div><hr>
+            <div style="display: flex;">
+                <ul style="margin-left: -2px;" class="fotopt" type="none">
+                    <li style="margin-left: 0px;">About</li><br>
+                    <li style="margin-left: 0px;">Customer care</li><br>
+                    <li style="margin-left: 0px;">Services</li><br>
+                    <li style="margin-left: 0px;">24/7 Helpline</li><br>
+                    <li style="margin-left: 0px;">Media Sevice</li><br><br>
+                </ul>
+                <ul type="none" class="fotopt">
+                    <li>Application security</li><br>
+                    <li>Software principles</li><br>
+                    <li>Unwanted software policy</li><br>
+                    <li>Responsible supply chain</li><br>
+                    <li>Extended workforce</li><br>
+                    <li>Conflict minerals policy</li><br>
+                    <li>Community Guidelines</li><br>
+                </ul>
+            </div><hr> 
+    </footer>
+</body>
+</html>
+
+
+
